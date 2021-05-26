@@ -27,7 +27,7 @@ const Widgets = () => {
 
         <TwitterShareButton
           url={"https://facebook.com/cleverprogrammer"}
-          options={{ text: "#reactjs is awesome", via: "cleverqazi" }}
+          options={{ text: "#react js is awesome", via: "cleverqazi" }}
         />
       </div>
     </div>

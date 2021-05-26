@@ -13,34 +13,30 @@ const Post = ({
   verified,
   // timestamp,
   avatar,
+  image,
+  text,
 }) => {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar
-          alt="user photo"
-          src="https://cdn.pixabay.com/photo/2020/05/22/07/46/model-5204225__340.jpg"
-        />
+        <Avatar alt="user photo" src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Humphrey Mutuma
+              {displayName}
               <span className="post__headerSpecial">
-                <VerifiedUser className="post__badge" /> 
-                @humphreymutuma7
+                {verified && <VerifiedUser className="post__badge" />}@
+                {username}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://cdn.pixabay.com/photo/2020/12/01/18/06/porsche-911-gt2-5795128__340.jpg"
-          alt="user img"
-        />
+        <img src={image} alt="user img" />
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
