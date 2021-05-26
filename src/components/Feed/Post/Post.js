@@ -6,8 +6,9 @@ import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
 
 import "./Post.css";
+import { forwardRef } from "react";
 
-const Post = ({
+const Post = forwardRef( ({
   displayName,
   username,
   verified,
@@ -15,9 +16,9 @@ const Post = ({
   avatar,
   image,
   text,
-}) => {
+}, ref) => {
   return (
-    <div className="post">
+    <div className="post" ref={ref}>
       <div className="post__avatar">
         <Avatar alt="user photo" src={avatar} />
       </div>
@@ -46,6 +47,6 @@ const Post = ({
       </div>
     </div>
   );
-};
+});
 
 export default Post;
