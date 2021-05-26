@@ -24,7 +24,7 @@
   padding: 10px;
   outline: none;
 }
-.tweetBox__tweetButton {
+.tweetBox__tweetButton , .tweetBox__tweetButtonDisabled {
   background-color: var(--twitter-color) !important;
   border: none !important;
   color: white !important;
@@ -35,4 +35,8 @@
   height: 50px !important;
   margin-top: 20px !important; 
     margin-left: auto !important;
+}
+.tweetBox__tweetButtonDisabled{
+    background-color: rgba(135, 207, 235, 0.692) !important;
+
 }

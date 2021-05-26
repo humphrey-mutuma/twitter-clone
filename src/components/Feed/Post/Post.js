@@ -36,7 +36,7 @@ const Post = ({
             <p>{text}</p>
           </div>
         </div>
-        <img src={image} alt="user img" />
+        <img src={image} alt="" />
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
